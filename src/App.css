@@ -1,3 +1,31 @@
+/* .name{
+  display: none;
+}
+.email{
+  display: none;
+}
+.birthD{
+  display: none;
+}
+.address{
+  display: none;
+}
+.phone{
+  display: none;
+}
+.password{
+  display: none;
+} */
+
+.noneDisplay{
+  display: none;
+}
+
+.display{
+  display: inline-block !important
+}
+
+
 .App {
   text-align: center;
 }
