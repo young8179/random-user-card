@@ -36,44 +36,50 @@ class RandomUser extends Component {
             
         })
     }
-    name= () =>{
+    display=(section) =>{
         this.setState({
-            // hidden: false,
-            display: "name"
+            display: section
         })
     }
 
-    email= () =>{
-        this.setState({
-            display: "email"
-        })
-    }
+    // name= () =>{
+    //     this.setState({
+            
+    //         display: "name"
+    //     })
+    // }
 
-    birthD= () =>{
-        this.setState({
-            display: "birthDay"
-        })
-    }
+    // email= () =>{
+    //     this.setState({
+    //         display: "email"
+    //     })
+    // }
 
-    address= () =>{
-        this.setState({
-            display: "address"
-        })
-    }
+    // birthD= () =>{
+    //     this.setState({
+    //         display: "birthDay"
+    //     })
+    // }
 
-    phone= () =>{
-        this.setState({
-            display: "phone"
-        })
-    }
-    password= () =>{
-        this.setState({
-            display: "password"
-        })
-    }
-    reset= () =>{
-        document.location.reload(true)
-    }
+    // address= () =>{
+    //     this.setState({
+    //         display: "address"
+    //     })
+    // }
+
+    // phone= () =>{
+    //     this.setState({
+    //         display: "phone"
+    //     })
+    // }
+    // password= () =>{
+    //     this.setState({
+    //         display: "password"
+    //     })
+    // }
+    // reset= () =>{
+    //     document.location.reload(true)
+    // }
 
     render() {
         
@@ -110,12 +116,12 @@ class RandomUser extends Component {
 
                 </div>
                 <div className="row info-row">
-                    <button onClick={this.name} className="col-2 p-2">Name</button>
-                    <button onClick={this.email} className="col-2 p-2">Email</button>
-                    <button onClick={this.birthD} className="col-2 p-2">BirthDay</button>
-                    <button onClick={this.address} className="col-2 p-2">Address</button>
-                    <button onClick={this.phone} className="col-2 p-2">Phone</button>
-                    <button onClick={this.password} className="col-2 p-2">Password</button>
+                    <button onClick={()=>{this.display("name")}} className="col-2 p-2">Name</button>
+                    <button onClick={()=>{this.display("email")}} className="col-2 p-2">Email</button>
+                    <button onClick={()=>{this.display("birthDay")}} className="col-2 p-2">BirthDay</button>
+                    <button onClick={()=>{this.display("address")}} className="col-2 p-2">Address</button>
+                    <button onClick={()=>{this.display("phone")}} className="col-2 p-2">Phone</button>
+                    <button onClick={()=>{this.display("password")}} className="col-2 p-2">Password</button>
                     
                 </div>
                 <div className="row reset-row mt-3">
